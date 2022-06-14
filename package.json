@@ -1,0 +1,32 @@
+{
+  "name": "backend-assignment",
+  "version": "1.0.0",
+  "description": "Backend Nodejs Assignment",
+  "main": "server.js",
+  "scripts": {
+    "test": "NODE_ENV=test mocha $(find tests -name '*.spec.js') --recursive --exit",
+    "start": "NODE_ENV=production node src/server.js",
+    "dev": "nodemon src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ankitksh81/backend-assignment.git"
+  },
+  "author": "Ankit Kumar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ankitksh81/backend-assignment/issues"
+  },
+  "homepage": "https://github.com/ankitksh81/backend-assignment#readme",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "bunyan": "^1.8.15",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  }
+}
