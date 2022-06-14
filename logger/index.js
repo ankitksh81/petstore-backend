@@ -11,14 +11,6 @@ const logger = bunyan.createLogger({
         {
             level: 'error',
             stream: process.stderr
-        },
-        {
-            level: 'debug',
-            path: './logger/logs/debug.log'
-        },
-        {
-            level: 'trace',
-            path: './logger/logs/trace.log'
         }
     ],
 });
