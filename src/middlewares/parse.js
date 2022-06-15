@@ -1,6 +1,8 @@
 const xlsxFile = require('read-excel-file/node');
 
-async function parseData(filepath) {
+const filepath = "uploads/pets.xlsx"
+
+async function parseData() {
     return xlsxFile(filepath)
     .then((rows) => {
         const columnNames = rows.shift();
@@ -17,7 +19,6 @@ async function parseData(filepath) {
 // Immediately invoked function expression to call parseData function
 (async () => {
     const res = await parseData();
-    console.log(res);
 })()
 
 module.exports = {
