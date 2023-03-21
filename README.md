@@ -1,4 +1,4 @@
-# Backend Assignment
+# PetStore Backend
 ---
 
 ## Requirements
